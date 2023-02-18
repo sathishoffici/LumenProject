@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Lumen</title>
+</head>
+<body>
+  <section>
+    <div class="container">
+      <h1 id="title">Create a Event</h1>
+
+      <form id="survey-form" action="insertdata.php" method="post">
+        <div class="input-box">
+          <label for="name" class="title-label" id="name-label">Name</label>
+          <input type="text" id="name" name="name" class="input-text" placeholder="Enter your name" required>
+        </div>
+        <div class="input-box">
+          <label for="email" class="title-label" id="email-label">Organisor Details</label>
+          <input type="email" id="email" name="orgdet" class="input-text" placeholder="Enter Details" required>
+        </div>
+        <div class="input-box">
+          <label for="number" class="title-label" id="number-label">Date</label>
+          <input type="date" id="number" name="date" class="input-text" min="0" max="200" placeholder="Enter the date">
+        </div>
+        <h2>Event Type</h2>
+        <div class="input-box">
+          <select name="role" id="dropdown" name="evntype" class="input-text">
+           
+            <option value="Face to Face">Face to Face</option>
+            <option value="Online">Online</option>
+          </select>
+          <br><br>
+        </div>
+        <label for="name" class="title-label" id="name-label">Location or Link</label>
+          <input type="text" id="name" name="loc" class="input-text" placeholder="Enter the details" required>
+          <br><br>
+          <div class="input-box">
+            <label for="number" class="title-label" id="number-label" >Seating capacity</label>
+            <input type="number" id="number" name="sc" class="input-text" min="0" max="2000" placeholder="Seating capacity">
+          </div>
+          <br>
+        
+        <h2>Event Description</h2>
+        <div class="input-box">
+          <textarea id="comment" name="des" class="input-text" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <input type="submit" id="submit" value="Submit" class="submit-button">
+      </form>
+    </div>
+  </section>
+  </body>
+</html>
